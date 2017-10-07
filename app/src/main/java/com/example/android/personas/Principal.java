@@ -46,6 +46,10 @@ public class Principal extends AppCompatActivity {
                     case 3:
                         Toast.makeText(contexto,Metodos.cuantas_hombres(Datos.obtenerPersonas())+"",Toast.LENGTH_SHORT).show();
                         break;
+                    case 4:
+                        i = new Intent(Principal.this,Listado_ListView.class);
+                        startActivity(i);
+                        break;
                 }
             }
         });
